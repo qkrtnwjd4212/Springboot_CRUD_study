@@ -7,11 +7,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class WebController {
 
-    @GetMapping("/hello")
-    public String hello(Model model) {
-        model.addAttribute("name", "root");
-        model.addAttribute("img", "image/hi.jpg");
-        return "hello";
+    @GetMapping("/")
+    public String index() {
+        return "home";
     }
 
 }
